@@ -27,7 +27,7 @@ before_script:
 
 # command to run tests
 script:
-  - coverage run ./DesignProject/webdatalabelling/tests.py 1
+  #- coverage run ./TimetableG/webdatalabelling/tests.py 1
 
 after_success:
   - coveralls
