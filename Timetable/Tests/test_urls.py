@@ -1,6 +1,6 @@
 from django.test import SimpleTestCase ,TestCase
 from django.urls import reverse, resolve
-from Timetable.Register.views import login, register, courses, forgot, resetp, astudent
+from ..Register.views import login, register, courses, forgot, resetp, astudent
 
 
 
