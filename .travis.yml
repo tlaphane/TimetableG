@@ -29,8 +29,8 @@ before_script:
 script:
   - coverage run ./Timetable/Register/tests.py 1
   - coverage run ./Timetable/Tests/test_models.py 1
-  - coverage run ./Timetable/Tests/test_urls.py 1
-  - coverage run ./Timetable/Tests/test_views.py 1
+  #- coverage run ./Timetable/Tests/test_urls.py 1
+  #- coverage run ./Timetable/Tests/test_views.py 1
   
 after_success:
   - coveralls
