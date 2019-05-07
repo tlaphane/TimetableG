@@ -27,7 +27,7 @@ before_script:
 
 # command to run tests
 script:
-  - coverage run ./TimetableG/Register/tests.py 1
+  - coverage run ./TimetableG/timetable-generator/Timetable/Register/tests.py 1
 
 after_success:
   - coveralls
