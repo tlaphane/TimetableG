@@ -1,6 +1,6 @@
 from django.test import TestCase
 
-from ..Register.models import StudentsRegister, Lecturer, Login, Courses, Announcements, Class, RegisteredStd, RegisteredStaffs
+from Timetable.Register.models import StudentsRegister, Lecturer, Login, Courses, Announcements, Class, RegisteredStd, RegisteredStaffs
 from django.utils import timezone
 
 
