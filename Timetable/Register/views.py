@@ -1,23 +1,10 @@
 from django.core.mail import send_mail
 from django.shortcuts import HttpResponse,render, redirect
-<<<<<<< HEAD
+
 from .models import StudentsRegister, Login, Lecturer, Courses, Announcements, Class, RegisteredStd, RegisteredStaffs
-=======
-from .models import StudentsRegister,Login
-
-
->>>>>>> 3164022b80062732ca7796c1765ed22d27d0f2d6
 
 stdnum = 0
 
-<<<<<<< HEAD
-=======
-    try:
-        kep = request.POST.get('uname', False)
-        stdin = int(request.POST.get('uname', False))
-
-from .models import StudentsRegister, Login, Lecturer, Courses, Announcements, Class, RegisteredStd, RegisteredStaffs
->>>>>>> 3164022b80062732ca7796c1765ed22d27d0f2d6
 
 
 def astaff(request, Staff_No):
@@ -60,22 +47,11 @@ def dummy(request, STDN):
     except StudentsRegister.DoesNotExist:
         if(kep):
             return render(request, 'Register/Log_in.html', {'error_message': "Wrong password or Student number", })
-<<<<<<< HEAD
-        else:
-            return render(request, 'Register/Log_in.html')
-
-    else:
-
-        return render(request, 'Register/Loggedin.html', {'STDN': STDN})
-
-=======
 
         else:
-            #return render(request, 'Register/Loggedin.html')
-        
 
-            return render(request, 'Register/Loggedin.html', {'STDN': STDN}
->>>>>>> 3164022b80062732ca7796c1765ed22d27d0f2d6
+            return render(request, 'Register/Loggedin.html', {'STDN': STDN})
+
 
 def loginconfirm(request):
     stdin = int(request.POST.get('uname', False))
@@ -99,10 +75,7 @@ def make(request,Staff_No):
 
     }
     return render(request, 'Register/Make_Announcement.html',context)
-<<<<<<< HEAD
 
-=======
->>>>>>> 3164022b80062732ca7796c1765ed22d27d0f2d6
 
 def forgot(request):
 
@@ -113,12 +86,12 @@ def register(request):
 
     return render(request, 'Register/register.html')
 
-<<<<<<< HEAD
+
 
 def resetp(request):
 
     return render(request, 'Register/reset.html')
-=======
+
 #def resetp(request):
    # return render(request, 'Register/reset.html')
     # try:
@@ -134,7 +107,7 @@ def resetp(request):
     #
     # else:
     #     return render(request, 'Register/Loggedin.html')
->>>>>>> 3164022b80062732ca7796c1765ed22d27d0f2d6
+
 
 
 def Reg(request):
@@ -155,10 +128,8 @@ def Reg(request):
 
     return render(request, 'Register/Log_in.html')
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 3164022b80062732ca7796c1765ed22d27d0f2d6
+
 def makeAnnouncement(request, Staff_No):
 
     Subject = request.POST['Title']
@@ -212,10 +183,7 @@ def announcement(request, STDN):
 
     return render(request, 'Register/Announcement.html', context)
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 3164022b80062732ca7796c1765ed22d27d0f2d6
 def reset(request):
 
     try:
@@ -233,11 +201,7 @@ def reset(request):
     else:
         return render(request, 'Register/reset.html', {'error_message': "Wrong email or Student number"})
 
-<<<<<<< HEAD
-        return render(request, 'Register/congrats.html')
 
-=======
->>>>>>> 3164022b80062732ca7796c1765ed22d27d0f2d6
 
 def logged(request):
     return render(request, 'Register/Loggedin.html')
@@ -252,25 +216,18 @@ def forgotpassword(request):
     except StudentsRegister.DoesNotExist:
         if (stdin):
             return render(request, 'Register/forgot.html', {'error_message': "Wrong password or Student number", })
+
+
         else:
-            return render(request, 'Register/fotgot.html')
+            subject = 'Reset your password'
+            message = 'Your password is  '
+            from_email = 'tlaphane@gmail.com'
+            to_list = ['tlaphane@gmail.com']
 
-    else:
-        subject = 'Reset your password'
-        message = 'Your password is  '
-        from_email = 'tlaphane@gmail.com'
-        to_list = ['tlaphane@gmail.com']
-<<<<<<< HEAD
-
-        send_mail(subject, message, from_email, to_list, fail_silently=True)
-        return render(request, 'Register/Log_in.html')
+            send_mail(subject, message, from_email, to_list, fail_silently=True)
+            return render(request, 'Register/Log_in.html')
 
 
-=======
-        send_mail(subject,message,from_email,to_list,fail_silently=True)
-        return render(request, 'Register/Log_in.html')
-
->>>>>>> 3164022b80062732ca7796c1765ed22d27d0f2d6
 def staff(request,Staff_No):
 
     try:
@@ -283,14 +240,10 @@ def staff(request,Staff_No):
     except StudentsRegister.DoesNotExist:
         if(kep):
             return render(request, 'Register/Log_in.html', {'error_message': "Wrong password or Student number", })
-    else:
+        else:
 
-<<<<<<< HEAD
-        return render(request, 'Register/lecturer_page.html', {'STDN': Staff_No,'staff': user1})
-
+            return render(request, 'Register/lecturer_page.html', {'STDN': Staff_No,'staff': user1})
 
 
 
-=======
-        return render(request, 'Register/lecturer_page.html', {'STDN': Staff_No,'staff': user1})
->>>>>>> 3164022b80062732ca7796c1765ed22d27d0f2d6
+
