@@ -3,10 +3,10 @@ from django.test import TestCase
 # Create your tests here.
 from django.test import TestCase
 
-from .models import StudentsRegister, Lecturer, Login, Courses, Announcements, Class, RegisteredStd, RegisteredStaffs
+#from .models import StudentsRegister, Lecturer, Login, Courses, Announcements, Class, RegisteredStd, RegisteredStaffs
 from django.utils import timezone
-import sys
-sys.path.append("Timetable.Register.tests.py")
+from Timetable.Register.models import *
+#sys.path.append("Timetable.Register.tests.py")
 
 class EntryModelTest(TestCase):
 
