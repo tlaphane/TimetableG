@@ -41,7 +41,11 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Timetable/loggedin/tests_urls.py">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -74,6 +78,7 @@
         <option value="$PROJECT_DIR$/Timetable/tests/test_urls.py" />
         <option value="$PROJECT_DIR$/Timetable/Register/tests.py" />
         <option value="$PROJECT_DIR$/Timetable/Register/tests_views.py" />
+        <option value="$PROJECT_DIR$/Timetable/loggedin/tests_urls.py" />
       </list>
     </option>
   </component>
@@ -365,7 +370,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Timetable/loggedin/tests_urls.py">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
