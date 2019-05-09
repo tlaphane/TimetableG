@@ -1,4 +1,5 @@
 from django.test import TestCase
+
 from django.test import TestCase, Client
 from django.urls import reverse, resolve
 # Create your tests here.
@@ -36,3 +37,4 @@ def test_reset(self):
     response = self.client.get(self.reset)
     self.assertEquals(response.status_code, 200)
     self.assertTemplateUsed(response, 'Register/reset.html')
+
