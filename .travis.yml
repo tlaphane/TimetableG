@@ -29,7 +29,7 @@ before_script:
 # command to run tests
 script:
   - coverage run ./Timetable/Register/tests.py 1
-  - coverage run ./Timetable/loggedin/tests.py 1
+  #- coverage run ./Timetable/loggedin/tests.py 1
   #- coverage run ./Timetable/tests/test_urls.py 1
   #- coverage run ./Timetable/Tests/test_views.py 1
   
