@@ -1,9 +1,9 @@
 from django.test import TestCase
-
-<<<<<<< HEAD
 from django.test import TestCase, Client
+from django.test import SimpleTestCase
 from django.urls import reverse, resolve
 # Create your tests here.
+
 def setUp(self):
     self.client = Client()
     self.login_url = reverse('login')
@@ -11,11 +11,6 @@ def setUp(self):
     self.reset = reverse('reset')
     self.forgot = reverse('forgot')
     self.Reg = reverse('Reg')
-=======
-from Timetable.Register.models import StudentsRegister,Lecturer,Login,Courses,Announcements,Class,RegisteredStd,RegisteredStaffs
-from django.utils import timezone
->>>>>>> 9bb242af646e1c398754865118719f93fca8b3aa
-
 
 def test_project_login_GET(self):
     response = self.client.get(self.login_url)
