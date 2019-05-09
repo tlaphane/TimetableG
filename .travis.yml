@@ -31,7 +31,7 @@ script:
   #- coverage run ./Timetable/Register/tests.py 1
   #- coverage run ./Timetable/loggedin/tests.py 1
   - coverage run ./Timetable/loggedin/tests_urls.py 
-  - coverage run ./Timetable/Register/tests_views.py 
+  #- coverage run ./Timetable/Register/tests_views.py 
   #- coverage run ./Timetable/Tests/test_views.py 1
   
 after_success:
