@@ -1,6 +1,8 @@
 # TimetableG
+[![Build Status](https://travis-ci.org/Motaung08/TimetableG.svg?branch=master)](https://travis-ci.org/Motaung08/TimetableG)
+[![codecov](https://codecov.io/gh/Motaung08/TimetableG/branch/master/graph/badge.svg)](https://codecov.io/gh/Motaung08/TimetableG)
 
-https://travis-ci.com/Motaung08/TimetableG.svg?branch=master
+
 
 Features in the Timetable generator:
 
