@@ -1,10 +1,5 @@
 from django.test import SimpleTestCase ,TestCase
 from django.urls import reverse, resolve
-#from Timetable.Register.views import login, register, courses, forgot, resetp, astudent
-from django.test import TestCase, Client
-from django.test import SimpleTestCase ,TestCase
-from django.urls import reverse, resolve
-#from Timetable.Register.views import login, register, courses, forgot, resetp, astudent
 from django.test import TestCase, Client
 
 class TestUrls(TestCase):
