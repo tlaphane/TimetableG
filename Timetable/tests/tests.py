@@ -12,7 +12,7 @@ from django.test import SimpleTestCase
         from Timetable.Register.views import login
         self.assertEquals(resolve(url).func, login)'''
 
-class TestUrls(SimpleTestCase):
+'''class TestUrls(SimpleTestCase):
 
     def test_list_url_is_resolved(self):
-        assert 1 == 2
+        assert 1 == 2'''
