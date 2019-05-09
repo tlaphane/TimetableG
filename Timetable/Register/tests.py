@@ -2,7 +2,7 @@ from django.test import SimpleTestCase ,TestCase
 from django.urls import reverse, resolve
 #from Timetable.Register.views import login, register, courses, forgot, resetp, astudent
 from django.test import TestCase, Client
-from Timetable.Register.models import StudentsRegister, Lecturer, Login, Courses, Announcements, Class, RegisteredStd, RegisteredStaffs
+from ..Register.models import StudentsRegister, Lecturer, Login, Courses, Announcements, Class, RegisteredStd, RegisteredStaffs
 from django.utils import timezone
 
 
