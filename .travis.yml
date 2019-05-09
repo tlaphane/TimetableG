@@ -20,6 +20,7 @@ install:
   - pip install coverage
   - pip install Django
   - pip install pathlib
+  - pip install codecov
 
 
 before_script:
