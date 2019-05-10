@@ -1,7 +1,7 @@
 from django.core.mail import send_mail
 from django.shortcuts import HttpResponse,render, redirect
 
-from .models import StudentsRegister, Login, Lecturer, Courses, Announcements, Class, RegisteredStd, RegisteredStaffs
+from Register.models import StudentsRegister, Login, Lecturer, Courses, Announcements, Class, RegisteredStd, RegisteredStaffs
 
 stdnum = 0
 
