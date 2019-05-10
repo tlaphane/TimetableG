@@ -17,7 +17,7 @@ class TestViews(TestCase):
         response = self.client.get(self.login_url)
 
         self.assertEquals(response.status_code, 200)
-        self.assertTemplateUsed(response, 'Register/Lo_in.html')
+        self.assertTemplateUsed(response, 'Register/Log_in.html')
 
     def test_confirm_login(self):
         response = self.client.get(self.confirm_log)
