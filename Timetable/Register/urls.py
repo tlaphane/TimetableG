@@ -1,5 +1,5 @@
 from django.conf.urls import url
-from Timetable.Register import views
+from Register import views
 
 urlpatterns = [
 
