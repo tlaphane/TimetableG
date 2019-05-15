@@ -32,7 +32,7 @@ script:
   #- pytest
   #- coverage run ./Timetable/Register/tests.py
   - coverage run ./Timetable/manage.py
-  - coverage run ./Timetable/Register/urls.py
+ 
   #- coverage run ./Timetable/loggedin/tests.py 1
   #- coverage run ./Timetable/loggedin/tests.py 
   #- coverage run ./Timetable/tests/tests.py
