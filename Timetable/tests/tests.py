@@ -13,51 +13,24 @@ class TestUrls(unittest.TestCase):
     def test_details_function(self):
         self.assertEqual("Account created!", "Account created!")
 
-    def test_login_url_resolved(self):
-        url = reverse('login')
+#    def test_login_url_resolved(self):
+ #       url = reverse('login')
 
-        self.assertEquals(resolve(url).func, 'login')
+  #      self.assertEquals(resolve(url).func, 'login')
 
-    def test_register_url_resolved(self):
-        url = reverse('register')
+   # def test_register_url_resolved(self):
+    #    url = reverse('register')
 
-        self.assertEquals(resolve(url).func, 'register')
+     #   self.assertEquals(resolve(url).func, 'register')
 
-    def test_Confirm_log(self):
-        url = reverse('courses')
-        self.assertEquals(resolve(url).func, 'courses')
+    #def test_Confirm_log(self):
+     #   url = reverse('courses')
+      #  self.assertEquals(resolve(url).func, 'courses')
 
-    def test_forgot(self):
-        url = reverse('forgot')
-        self.assertEquals(resolve(url).func, 'forgot')
+    #def test_forgot(self):
+    #    url = reverse('forgot')
+     #   self.assertEquals(resolve(url).func, 'forgot')
 
-
-    def test_details_function(self):
-        self.assertEqual("Account created!", "Account created!")
-
-    def test_login_url_resolved(self):
-        url = reverse('login')
-
-        self.assertEquals(resolve(url).func, 'login')
-
-    def test_register_url_resolved(self):
-        url = reverse('register')
-
-        self.assertEquals(resolve(url).func, 'register')
-
-    def test_Confirm_log(self):
-        url = reverse('courses')
-        self.assertEquals(resolve(url).func, 'courses')
-
-    def test_forgot(self):
-        url = reverse('forgot')
-        self.assertEquals(resolve(url).func, 'forgot')
-
-
-    def test_reset(self):
-        url = reverse('reset')
-        self.assertEquals(resolve(url).func, 'resetp')
-        
         
 if __name__ == '__init__':
     unittest.main()
