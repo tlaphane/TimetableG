@@ -32,7 +32,7 @@ script:
   - python ./Timetable/manage.py test TimetableG.Timetable.tests.tests
 
  
-  - pytest
+  
   #- coverage run ./Timetable/Register/tests.py
   #- coverage run ./Timetable/manage.py TimetableG.Timetable.tests.tests
  
