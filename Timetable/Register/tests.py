@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from django.test import SimpleTestCase ,TestCase
 from django.urls import reverse, resolve
 #from Timetable.Register.views import login, register, courses, forgot, resetp, astudent
@@ -66,3 +67,6 @@ class TestViews(TestCase):
             self.assertTemplateUsed(response,'Register/reset.html')
 
 
+=======
+
+>>>>>>> 042ab1ed7a883ed4b549c39d1646ce05881fe0fa
