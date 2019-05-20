@@ -1,9 +1,11 @@
 from django.test import TestCase, Client
 from django.urls import reverse, resolve
 from Timetable.Register.models import Courses
+import unittest
 
 
-class TestViews(TestCase):
+class TestViews(unittest.TestCase):
+
     def setUp(self):
         self.client = Client()
         self.login_url = reverse('login')
@@ -34,3 +36,6 @@ class TestViews(TestCase):
         response = self.client.get(self.reset)
         self.assertEquals(response.status_code, 200)
         self.assertTemplateUsed(response, 'Register/reset.html')
+
+if __name__ == '__init__':
+    unittest.main()

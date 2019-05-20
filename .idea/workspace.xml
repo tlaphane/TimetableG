@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="5b99b1cb-d5ae-4371-8461-c70e9ba6f42f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Timetable/tests/test_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Timetable/tests/test_urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Timetable/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Timetable/tests/test_views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Timetable/tests/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Timetable/tests/tests.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Timetable/tests/tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+            <state relative-caret-position="499">
+              <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -41,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Timetable/tests/test_views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+            <state relative-caret-position="600">
+              <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -53,8 +55,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Timetable/tests/test_urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="465">
+              <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -111,13 +113,14 @@
         <option value="$PROJECT_DIR$/Timetable/loggedin/tests_urls.py" />
         <option value="$PROJECT_DIR$/Timetable/Register/views.py" />
         <option value="$PROJECT_DIR$/Timetable/Register/tests.py" />
-        <option value="$PROJECT_DIR$/Timetable/tests/test_urls.py" />
         <option value="$PROJECT_DIR$/Timetable/Register/urls.py" />
         <option value="$PROJECT_DIR$/Timetable/tests/tests.py" />
+        <option value="$PROJECT_DIR$/Timetable/tests/test_views.py" />
+        <option value="$PROJECT_DIR$/Timetable/tests/test_urls.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="833" />
     <option name="y" value="25" />
     <option name="width" value="767" />
@@ -141,12 +144,6 @@
               <item name="TimetableG" type="b2602c69:ProjectViewProjectNode" />
               <item name="TimetableG" type="462c0819:PsiDirectoryNode" />
               <item name="Timetable" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TimetableG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TimetableG" type="462c0819:PsiDirectoryNode" />
-              <item name="Timetable" type="462c0819:PsiDirectoryNode" />
-              <item name="Register" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TimetableG" type="b2602c69:ProjectViewProjectNode" />
@@ -202,10 +199,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="833" y="25" width="767" height="875" extended-state="4" />
+    <frame x="67" y="25" width="1533" height="875" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.041608877" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13853396" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -346,26 +343,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Timetable/Register/test_urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Timetable/tests/test_views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Timetable/Register/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
@@ -383,20 +360,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Timetable/tests/test_urls.py">
+    <entry file="file://$PROJECT_DIR$/Timetable/Register/test_urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="150">
+          <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Timetable/tests/test_urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Timetable/tests/test_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Timetable/tests/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+        <state relative-caret-position="499">
+          <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
