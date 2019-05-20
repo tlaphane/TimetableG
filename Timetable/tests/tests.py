@@ -1,10 +1,11 @@
+import unittest
 from django.test import TestCase, Client
 from django.test import SimpleTestCase
 from django.urls import reverse, resolve
 # Create your tests here.
 
 
-class TestUrls(TestCase):
+class TestUrls(unittest.TestCase):
     def test_login_url_resolved(self):
         url = reverse('login')
 
@@ -58,3 +59,8 @@ class TestUrls(TestCase):
         response = self.client.get(self.reset)
         self.assertEquals(response.status_code, 200)
         self.assertTemplateUsed(response, 'Register/reset.html')
+        
+        
+if __name__ == '__main__':
+    unittest.main()
+        
