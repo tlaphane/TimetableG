@@ -33,7 +33,7 @@ class TestUrls(unittest.TestCase):
 
         
 if __name__ == '__init__':
-    unittest.main()
+    unittest.init()
 
         
         
