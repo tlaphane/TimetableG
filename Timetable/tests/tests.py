@@ -14,9 +14,9 @@ class TestUrls(unittest.TestCase):
         self.assertEqual("Account created!", "Account created!")
 
     def test_login_url_function(self):
-        #url = reverse('login')
+        url = reverse('login')
 
-        self.assertEquals("login", "loggedin")
+        self.assertEquals(url, "login")
 
    # def test_register_url_resolved(self):
     #    url = reverse('register')
