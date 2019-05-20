@@ -2,9 +2,9 @@ import unittest
 from django.test import TestCase, Client
 from django.test import SimpleTestCase
 from django.urls import reverse, resolve
-from Timetable.Register import urls
+from TimetableG.Timetable.Register import urls
 from django.conf.urls import url
-from Timetable.Register import views
+from TimetableG.Timetable.Register import views
 
 
 # Create your tests here.
