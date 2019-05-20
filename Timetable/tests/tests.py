@@ -32,13 +32,13 @@ class TestUrls(unittest.TestCase):
 #         self.assertEquals(resolve(url).func, 'resetp')
 
 
-#     def setUp(self):
-#         self.client = Client()
-#         self.login_url = reverse('login')
-#         self.confirm_log = reverse('confirm_log')
-#         self.reset = reverse('reset')
-#         self.forgot = reverse('forgot')
-#         self.Reg = reverse('Reg')
+      def setUp(self):
+         self.client = Client()
+         self.login_url = reverse('login')
+         self.confirm_log = reverse('confirm_log')
+         self.reset = reverse('reset')
+         self.forgot = reverse('forgot')
+         self.Reg = reverse('Reg')
 
 #     def test_project_login_GET(self):
 #         response = self.client.get(self.login_url)
