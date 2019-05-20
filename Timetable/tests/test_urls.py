@@ -1,9 +1,10 @@
 from django.test import SimpleTestCase ,TestCase
 from django.urls import reverse, resolve
 from django.test import TestCase, Client
+import unittest
 
 class TestUrls(TestCase):
-    
+
     def test_login_url_resolved(self):
         url = reverse('login')
 
@@ -28,7 +29,8 @@ class TestUrls(TestCase):
         self.assertEquals(resolve(url).func, 'resetp')
 
 
-
+if __name__ == '__main__':
+    unittest.main()
 
 
 
