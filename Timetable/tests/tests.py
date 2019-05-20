@@ -37,7 +37,7 @@ class TestUrls(unittest.TestCase):
         self.assertEquals(resolve(url).func, 'resetp')
         
         
-if __name__ == '__main__':
+if __name__ == '__init__':
     unittest.main()
 
         
