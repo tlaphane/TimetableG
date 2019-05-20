@@ -16,6 +16,7 @@ class TestUrls(unittest.TestCase):
         self.assertEqual("Account created!", "Account created!")
 
     def test_login_url_function(self):
+<<<<<<< HEAD
         url_test = [
             url(r'^$', views.login, name='login'),
             url(r'^register', views.register, name='Register'),
@@ -37,6 +38,11 @@ class TestUrls(unittest.TestCase):
 
         self.assertEquals(url_test, urls.urlpatterns)
 
+=======
+        url = reverse('login')
+
+        self.assertEquals(url, "login")
+>>>>>>> 806180a6acd78b53272dd6d5aedad1e53ac2e699
 
 # def test_register_url_resolved(self):
 #    url = reverse('register')
