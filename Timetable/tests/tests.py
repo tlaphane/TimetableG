@@ -16,7 +16,7 @@ class TestUrls(unittest.TestCase):
     def test_login_url_function(self):
         #url = reverse('login')
 
-        self.assertEquals("login", "login")
+        self.assertEquals("login", "loggedin")
 
    # def test_register_url_resolved(self):
     #    url = reverse('register')
