@@ -20,7 +20,7 @@ class TestUrls(unittest.TestCase):
         self.assertEquals(url_test, url.urlpatterns)
         
 if __name__ == '__main__':
-    unittest.main.TestUrls()
+    unittest.main()
     
     
     
