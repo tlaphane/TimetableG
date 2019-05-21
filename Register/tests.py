@@ -3,27 +3,24 @@ from django.test import TestCase, Client
 from django.test import SimpleTestCase
 from django.urls import reverse, resolve
 from django.conf.urls import url
-#from loggedin import views, urls
+from django.test import  TestCase
+from loggedin import urls
 
 # Create your tests here.
+class UrlTestCase(TestCase):
+    def setUp(self):
+        url.objects.create(name="login", page="loggedin")
+        url.objects.create(name="Notlogged", page="loggedoff")
 
+    def test_url_loggedin(self):
+        login = url.objects.create(name="login")
+        Notlogged = url.objects.create(name="Notlogged")
 
-class TestUrls(unittest.TestCase):
+if __name__ == '__init__':
+    unittest.init()
 
-    def test_details_function(self):
-        self.assertEqual("Account created!", "Account created!")
-
-    def test_login_url_function(self):
-
-        url_test = [
-            url(r'^$', views.logg, name='login'),
-            url(r'^forgot', views.logg, name='Forgot'),
-        ]
-        self.assertEquals(url_test, url.urlpatterns)
-
-    def test_Confirm_log(self):
-        url = reverse('courses')
-        self.assertEquals(resolve(url).func, 'courses')
+        #url = reverse('courses')
+        #self.assertEquals(resolve(url).func, 'courses')
             #url(r'^register', views.register, name='Register'),
             #url(r'^reg', views.Reg, name='Reg'),
             #url(r'^logged', views.login, name='Logged'),
@@ -44,8 +41,8 @@ class TestUrls(unittest.TestCase):
         #self.assertEquals(url_test, urls.urlpatterns)
 
 
-if __name__ == '__main__':
-    unittest.main()
+#if __name__ == '__main__':
+ #   unittest.main()
 
 # def test_register_url_resolved(self):
 #    url = reverse('register')

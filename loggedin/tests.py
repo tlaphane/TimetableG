@@ -10,24 +10,17 @@ from django.conf.urls import url
 # Create your tests here.
 
 
+
 class TestUrls(unittest.TestCase):
 
     def test_details_function(self):
         self.assertEqual("Account created!", "Account created!")
 
-#if __name__ == '__main__':
- #   unittest.main()
-
     def test_login_url_resolve(self):
-        url_test = reverse('loggedin'),
+        #url_test = reverse('loggedin'),
+        self.assertEquals('loggedin'.logg(), 'Register/Loggedin.html')
 
-        self.assertEquals(url_test, url.urlpatterns)
-
-    #def test_Confirm_log(self):
-     #   url = reverse('courses')
-      #  self.assertEquals(resolve(url).func, 'courses')
-
-if __name__ == '__main__.TestUrls':
+if __name__ == '__main__':
     unittest.main()
 
 # def test_register_url_resolved(self):
