@@ -9,10 +9,10 @@ from loggedin import views
 # Create your tests here.
 
 
-#class TestUrls(unittest.TestCase):
+class TestUrls(unittest.TestCase):
 
-#    def test_details_function(self):
- #       self.assertEqual("Account created!", "Account created!")
+    def test_details_function(self):
+        self.assertEqual("Account created!", "Account created!")
 
   #  def test_login_url_function(self):
 
