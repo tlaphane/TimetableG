@@ -31,7 +31,7 @@ script:
   #- python ./manage.py test 
   #- python ./TimetableGen/manage.py 
   #- python ./manage.py
-  - coverage run tests.py
+  - coverage run ./tests.py
  
   
   #- coverage run ./Timetable/Register/tests.py
