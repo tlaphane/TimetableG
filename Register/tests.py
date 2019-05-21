@@ -1,37 +1,58 @@
+import unittest
 from django.test import TestCase, Client
 from django.test import SimpleTestCase
 from django.urls import reverse, resolve
+from django.conf.urls import url
+from loggedin import views
+
+
 # Create your tests here.
 
 
-class TestViews(TestCase):
-    def setUp(self):
-        self.client = Client()
-        self.login_url = reverse('login')
-        self.confirm_log = reverse('confirm_log')
-        self.reset = reverse('reset')
-        self.forgot = reverse('forgot')
-        self.Reg = reverse('Reg')
+#class TestUrls(unittest.TestCase):
 
-    def test_project_login_GET(self):
-        response = self.client.get(self.login_url)
+#    def test_details_function(self):
+ #       self.assertEqual("Account created!", "Account created!")
 
-        self.assertEquals(response.status_code, 200)
-        self.assertTemplateUsed(response, 'Register/Log_in.html')
+  #  def test_login_url_function(self):
 
-    def test_confirm_login(self):
-        response = self.client.get(self.confirm_log)
+        #url_test = [
+            #url(r'^$', views.login, name='login'),
+            #url(r'^register', views.register, name='Register'),
+            #url(r'^reg', views.Reg, name='Reg'),
+            #url(r'^logged', views.login, name='Logged'),
+            #url(r'^courses', views.courses, name='Courses'),
+            #url(r'^forgot', views.forgot, name='Forgot'),
+            #url(r'^reset-password', views.resetp, name='Reset-Password'),
+            #url(r'^(?P<STDN>[0-9]+)/announcement', views.astudent, name='stdn'),
+            #url(r'^(?P<STDN>[0-9]+)/courses', views.courses, name='stdn'),
+            #url(r'^(?P<STDN>[0-9]+)', views.dummy, name='sdtn'),
+            #url(r'^staff(?P<Staff_No>[0-9]+)/courses', views.StaffCourses, name='Staff'),
+            #url(r'^staff(?P<Staff_No>[0-9]+)/announcement', views.astaff, name='Staff'),
+            #url(r'^staff(?P<Staff_No>[0-9]+)/make_announcement', views.make, name='Staff'),
+            #url(r'^staff(?P<Staff_No>[0-9]+)/made_announcement', views.makeAnnouncement, name='Staff'),
+            #url(r'^staff(?P<Staff_No>[0-9]+)', views.staff, name='Staff'),
 
-        self.assertEquals(response.status_code, 200)
-        self.assertTemplateUsed(response, 'Register/Loggedin.html')
+        #]
 
-    def test_forgot(self):
-        response = self.client.get(self.forgot)
+        #self.assertEquals(url_test, url.urlpatterns)
 
-        self.assertEquals(response.status_code, 200)
-        self.assertTemplateUsed(response, 'Register/forgot.html')
 
-    def test_reset(self):
-        response = self.client.get(self.reset)
-        self.assertEquals(response.status_code, 200)
-        self.assertTemplateUsed(response, 'Register/reset.html')
+#if __name__ == '__main__':
+    #unittest.main()
+
+# def test_register_url_resolved(self):
+#    url = reverse('register')
+
+#   self.assertEquals(resolve(url).func, 'register')
+
+# def test_Confirm_log(self):
+#   url = reverse('courses')
+#  self.assertEquals(resolve(url).func, 'courses')
+
+# def test_forgot(self):
+#    url = reverse('forgot')
+#   self.assertEquals(resolve(url).func, 'forgot')
+
+
+
