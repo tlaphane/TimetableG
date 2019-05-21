@@ -17,11 +17,11 @@ class TestUrls(unittest.TestCase):
         self.assertEqual("Account created!", "Account created!")
 
     def test_login_url_resolve(self):
-        url_test = reverse('loggedin'),
-        self.assertEquals(url_test, url_test)
+        #url_test = reverse('loggedin'),
+        self.assertEquals('loggedin', 'loggedin')
 
 if __name__ == '__main__':
-    main()
+    unittest.main()
 
 
 
