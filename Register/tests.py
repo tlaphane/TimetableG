@@ -3,7 +3,7 @@ from django.test import TestCase, Client
 from django.test import SimpleTestCase
 from django.urls import reverse, resolve
 from django.conf.urls import url
-from loggedin import views, urls
+#from loggedin import views, urls
 
 # Create your tests here.
 
@@ -14,11 +14,12 @@ class TestUrls(unittest.TestCase):
         self.assertEqual("Account created!", "Account created!")
 
     def test_login_url_function(self):
+        from loggedin import views
         url_test = [
             url(r'^$', views.logg, name='login'),
-            url(r'^forgot', views.forgot, name='Forgot'),
+            url(r'^forgot', views.logg, name='Forgot'),
         ]
-        self.assertEquals(url_test, urls.urlpatterns)
+        self.assertEquals(url_test, url.urlpatterns)
 
     def test_Confirm_log(self):
         url = reverse('courses')
