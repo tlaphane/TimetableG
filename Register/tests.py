@@ -9,18 +9,18 @@ from django.conf.urls import url
 
 class TestUrls(unittest.TestCase):
 
-    def test_details_function(self):
-        self.assertEqual("Account created!", "Account created!")
+    #def test_details_function(self):
+        #self.assertEqual("Account created!", "Account created!")
  
-if __name__ == '__main__':
-    unittest.main()       
+#if __name__ == '__main__':
+    #unittest.main()       
 
     def test_login_url_resolve(self):
         url_test = reverse('loggedin'),
         self.assertEquals(url_test, url.urlpatterns)
         
-if __name__ == '__main__.TestUrls':
-    unittest.main()
+if __name__ == '__main__':
+    unittest.main.TestUrls()
     
     
     
