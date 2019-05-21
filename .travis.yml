@@ -47,5 +47,5 @@ script:
   #- coverage run ./Timetable/Tests/test_views.py 1
   
 after_success:
-  #- coveralls
+  - coveralls
   - codecov
