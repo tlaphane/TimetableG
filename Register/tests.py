@@ -38,8 +38,8 @@ class TestUrls(unittest.TestCase):
         #self.assertEquals(url_test, url.urlpatterns)
 
 
-#if __name__ == '__main__':
-    #unittest.main()
+if __name__ == '__main__':
+    unittest.main()
 
 # def test_register_url_resolved(self):
 #    url = reverse('register')
