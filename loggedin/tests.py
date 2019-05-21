@@ -16,8 +16,16 @@ class TestUrls(unittest.TestCase):
     def test_details_function(self):
         self.assertEqual("Account created!", "Account created!")
 
+    def test_login_url_function(self):
+        url_test = [
+            url(r'^$', views.logg, name='login'),
+            url(r'^forgot', views.forgot, name='Forgot'),
+        ]
+        self.assertEquals(url_test, urls.urlpatterns)
 
-
+    def test_Confirm_log(self):
+        url = reverse('courses')
+        self.assertEquals(resolve(url).func, 'courses')
 
 if __name__ == '__main__':
     unittest.main()
