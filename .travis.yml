@@ -30,7 +30,7 @@ before_script:
 script:
   #- python ./manage.py test 
   #- python ./TimetableGen/manage.py 
-  - python ./manage.py test
+  - python ./manage.py
 
  
   
@@ -45,5 +45,5 @@ script:
   #- coverage run ./Timetable/Tests/test_views.py 1
   
 after_success:
-  - coveralls
+  #- coveralls
   - codecov
