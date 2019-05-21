@@ -21,7 +21,7 @@ class TestUrls(unittest.TestCase):
         self.assertEquals(url_test, url_test)
 
 if __name__ == '__main__':
-    unittest.main()
+    main()
 
 
 
