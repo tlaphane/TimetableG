@@ -28,7 +28,7 @@ before_script:
 
 # command to run tests
 script:
-  - python ./TimetableG/manage.py test 
+  - python ./manage.py test 
   #- python ./TimetableGen/manage.py 
   #- python ./manage.py
 
