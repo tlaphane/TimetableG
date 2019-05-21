@@ -14,7 +14,7 @@ class TestUrls(unittest.TestCase):
         self.assertEqual("Account created!", "Account created!")
 
     def test_login_url_function(self):
-        from loggedin import views
+
         url_test = [
             url(r'^$', views.logg, name='login'),
             url(r'^forgot', views.logg, name='Forgot'),
