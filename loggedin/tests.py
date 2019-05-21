@@ -18,11 +18,10 @@ class TestUrls(unittest.TestCase):
 
     def test_login_url_resolve(self):
         url_test = reverse('loggedin'),
+        self.assertEquals(url_test, url_test)
 
-        self.assertEquals(url_test, url.urlpatterns)
-
-if __name__ == '__init__':
-    unittest.init()
+if __name__ == '__main__':
+    unittest.main()
 
 
 
