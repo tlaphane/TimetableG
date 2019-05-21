@@ -3,7 +3,7 @@ from django.test import TestCase, Client
 from django.test import SimpleTestCase
 from django.urls import reverse, resolve
 from django.conf.urls import url
-from loggedin import views
+#from loggedin import views
 
 
 # Create your tests here.
