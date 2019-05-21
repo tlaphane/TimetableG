@@ -9,8 +9,8 @@ class TestUrls(unittest.TestCase):
         self.assertEquals('loggedin', 'Register/Loggedin.html')
 
     def test_isview_login(self):
-        self.assertTrue('Register/Loggedin.html','loggedin')
-        #self.assertFalse('LOGGEDIN','loggedin')
+        self.assertIn('loggedin','Register/Loggedin.html')
+        self.assertNotIn('loggedin','LOGGEDIN')
 
 if __name__ == '__main__':
     unittest.main()
