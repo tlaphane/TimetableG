@@ -14,9 +14,15 @@ class TestUrls(unittest.TestCase):
         self.assertEqual("Account created!", "Account created!")
 
     def test_login_url_function(self):
-
         url_test = [
             url(r'^$', views.logg, name='login'),
+            url(r'^forgot', views.forgot, name='Forgot'),
+        ]
+        self.assertEquals(url_test, urls.urlpatterns)
+
+    def test_Confirm_log(self):
+        url = reverse('courses')
+        self.assertEquals(resolve(url).func, 'courses')
             #url(r'^register', views.register, name='Register'),
             #url(r'^reg', views.Reg, name='Reg'),
             #url(r'^logged', views.login, name='Logged'),
@@ -32,9 +38,9 @@ class TestUrls(unittest.TestCase):
             #url(r'^staff(?P<Staff_No>[0-9]+)/made_announcement', views.makeAnnouncement, name='Staff'),
             #url(r'^staff(?P<Staff_No>[0-9]+)', views.staff, name='Staff'),
 
-        ]
+        #]
 
-        self.assertEquals(url_test, urls.urlpatterns)
+        #self.assertEquals(url_test, urls.urlpatterns)
 
 
 if __name__ == '__main__':
