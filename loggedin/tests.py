@@ -18,10 +18,53 @@ class TestUrls(unittest.TestCase):
 
     def test_login_url_resolve(self):
         #url_test = reverse('loggedin'),
+<<<<<<< HEAD
         self.assertEquals('loggedin'.logg(), 'Register/Loggedin.html')
 
 if __name__ == '__main__':
     unittest.main()
+=======
+        self.assertEquals('loggedin', 'loggedin')
+
+if __name__ == '__main__':
+    unittest.main()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#class TestUrls(unittest.TestCase):
+
+   # def test_details_function(self):
+        #self.assertEqual("Account created!", "Account created!")
+
+#if __name__ == '__main__':
+ #   unittest.main()
+
+    #def test_login_url_resolve(self):
+     #   url_test = reverse('loggedin'),
+
+     #   self.assertEquals(url_test, url.urlpatterns)
+
+    #def test_Confirm_log(self):
+     #   url = reverse('courses')
+      #  self.assertEquals(resolve(url).func, 'courses')
+
+#if __name__ == '__main__.TestUrls':
+    #unittest.main()
+>>>>>>> ccc5d5d1b7375e4531796eff9c9a12eb96497ecb
 
 # def test_register_url_resolved(self):
 #    url = reverse('register')

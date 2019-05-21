@@ -3,8 +3,11 @@ from django.test import TestCase, Client
 from django.test import SimpleTestCase
 from django.urls import reverse, resolve
 from django.conf.urls import url
+<<<<<<< HEAD
 from django.test import  TestCase
 from loggedin import urls
+=======
+>>>>>>> ccc5d5d1b7375e4531796eff9c9a12eb96497ecb
 
 # Create your tests here.
 class UrlTestCase(TestCase):
@@ -19,8 +22,31 @@ class UrlTestCase(TestCase):
 if __name__ == '__init__':
     unittest.init()
 
+<<<<<<< HEAD
         #url = reverse('courses')
         #self.assertEquals(resolve(url).func, 'courses')
+=======
+    #def test_details_function(self):
+        #self.assertEqual("Account created!", "Account created!")
+ 
+#if __name__ == '__main__':
+    #unittest.main()       
+
+    def test_login_url_resolve(self):
+        url_test = reverse('loggedin'),
+        self.assertEquals(url_test, url.urlpatterns)
+        
+if __name__ == '__main__':
+    unittest.main()
+    
+    
+    
+    #def test_Confirm_log(self):
+     #   url = reverse('courses')
+      #  self.assertEquals(resolve(url).func, 'courses')
+
+
+>>>>>>> ccc5d5d1b7375e4531796eff9c9a12eb96497ecb
             #url(r'^register', views.register, name='Register'),
             #url(r'^reg', views.Reg, name='Reg'),
             #url(r'^logged', views.login, name='Logged'),
