@@ -3,8 +3,6 @@ from django.test import TestCase, Client
 from django.test import SimpleTestCase
 from django.urls import reverse, resolve
 from django.conf.urls import url
-from django.test import  TestCase
-from loggedin import urls
 
 
 
