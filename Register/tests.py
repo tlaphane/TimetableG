@@ -21,7 +21,7 @@ class TestUrls(unittest.TestCase):
     def test_isview_login(self):
         self.assertTrue('login', 'logged')
         self.assertTrue('login', './')
-        
+
     def test_isview_notlogin(self):
         self.assertNotIn('logged', './')
 
