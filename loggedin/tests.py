@@ -16,13 +16,10 @@ class TestUrls(unittest.TestCase):
         self.assertNotIn('logged', './')
 
     def test_Confirm_log(self):
-<<<<<<< HEAD
-        #url = reverse('courses')
-        self.assertEquals(resolve(reverse('courses')).func, 'courses')
-=======
-        url = resolve('courses')
-        self.assertEquals(resolve(url).func, 'courses')
->>>>>>> 4c06889b99fc9776b4d507151b2bde63173dff7c
+        self.assertTrue('Confirm', 'Confirm')
+        self.assertNotIn('Confirm', './')
+
+
 
 if __name__ == '__main__':
     unittest.main()
