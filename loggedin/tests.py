@@ -1,5 +1,5 @@
 import unittest
-
+from django.urls import reverse, resolve
 
 class TestUrls(unittest.TestCase):
 
@@ -15,6 +15,9 @@ class TestUrls(unittest.TestCase):
     def test_isview_notlogin(self):
         self.assertNotIn('logged', './')
 
+    def test_Confirm_log(self):
+        url = reverse('courses')
+        self.assertEquals(resolve(url).func, 'courses')
 
 if __name__ == '__main__':
     unittest.main()
