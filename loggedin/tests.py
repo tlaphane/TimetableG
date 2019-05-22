@@ -18,12 +18,7 @@ class TestUrls(unittest.TestCase):
     def test_Confirm_log(self):
         self.assertTrue('Confirm', 'Confirm')
         self.assertNotIn('Confirm', './')
-<<<<<<< HEAD
 
-
-=======
-        #self.assertEquals(resolve(reverse('courses')).func, 'courses')
->>>>>>> 13af4737ffc89ae6772f332ff7196c73ee110997
 
 if __name__ == '__main__':
     unittest.main()
