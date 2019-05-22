@@ -1,7 +1,6 @@
 import unittest
 from django.test import SimpleTestCase, Client
 from django.urls import reverse, resolve
-from loggedin import views
 
 #class TestViews(unittest.TestCase):
     #def test_details_function(self):
