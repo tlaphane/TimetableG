@@ -1,14 +1,4 @@
-from django.test import TestCase
-
-# Create your tests here.
 import unittest
-from django.test import TestCase, Client
-from django.test import SimpleTestCase
-from django.urls import reverse, resolve
-from django.conf.urls import url
-from loggedin import views
-# Create your tests here.
-
 
 
 class TestUrls(unittest.TestCase):
@@ -16,20 +6,18 @@ class TestUrls(unittest.TestCase):
     def test_details_function(self):
         self.assertEqual("Account created!", "Account created!")
 
-    def test_login_url_resolve(self):
-        #url_test = reverse('loggedin'),
+    def view_login(self):
+        self.assertEquals('loggedin', 'Register/Loggedin.html')
 
-        self.assertEquals('loggedin'.logg(), 'Register/Loggedin.html')
+    def test_isview_login(self):
+        self.assertTrue('login', 'Register/Loggedin.html')
+
+    def test_isview_notlogin(self):
+        self.assertNotIn('logged', './')
 
 
 if __name__ == '__main__':
     unittest.main()
-
-
-
-
-
-
 
 
 
