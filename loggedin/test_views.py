@@ -7,7 +7,7 @@ class TestViews(unittest.TestCase):
         self.assertEqual("Account created!", "Account created!")
          
     def test_confirm_login(self):
-        self.assertIn('login','Register/Log_in.html')
+        self.assertIn('loggedin','Register/Log_in.html')
 
 
 if __name__ == '__main__':
