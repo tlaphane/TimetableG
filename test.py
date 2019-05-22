@@ -1,6 +1,4 @@
 import unittest
-from loggedin import views
-
 
 class TestUrls(unittest.TestCase):
 
@@ -8,11 +6,11 @@ class TestUrls(unittest.TestCase):
         self.assertEqual("Account created!", "Account created!")
 
     def view_login(self):
-        self.assertEquals('loggedin'.logg(), 'Register/Loggedin.html')
+        self.assertEquals('loggedin', 'Register/Loggedin.html')
 
     def test_isview_login(self):
-        self.assertTrue('loggedin'.islogg())
-        self.assertFalse('LOGGEDIN'.islogg())
+        self.assertIn('loggedin','Register/Loggedin.html')
+        self.assertNotIn('loggedin','LOGGEDIN')
 
 if __name__ == '__main__':
     unittest.main()
