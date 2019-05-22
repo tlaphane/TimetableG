@@ -15,7 +15,7 @@ from django.views import *
 class TestUrls(SimpleTestCase):
 
     def test_views_logg_is_resolved(self):
-        url = reverse(r'^$')
+        url = reverse("r'^$'")
         print(resolve(url))
 
 if __name__ == '__main__':
