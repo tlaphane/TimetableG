@@ -29,12 +29,13 @@ before_script:
 # command to run tests
 script:
   #- python ./manage.py test 
-  #- python ./TimetableGen/manage.py 
+  - python ./Timetable/manage.py test 
   - python ./manage.py 
+  - pytest
   
  
   
-  #- coverage run ./Timetable/Register/tests.py
+  - coverage run ./Timetable/Register/urls.py
   #- coverage run ./Timetable/manage.py TimetableG.Timetable.tests.tests
   #- coverage run ./test.py
   - coverage run ./loggedin/tests.py
