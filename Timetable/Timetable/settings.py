@@ -51,9 +51,8 @@ else:
       # 'Class.apps.ClassConfig',
       #  'Announcements.apps.AnnouncementsConfig',
       #  'Courses.apps.CoursesConfig',
-       'Lecturer.apps.LecturerConfig',
-
-       'Register.apps.RegisterConfig',
+       'Lecturer',
+       'Register',
        'django.contrib.admin',
        'django.contrib.auth',
        'django.contrib.contenttypes',
@@ -61,7 +60,17 @@ else:
        'django.contrib.messages',
        'django.contrib.staticfiles',
    ]
+   TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 
+    NOSE_ARGS =[
+
+        '--cover-erase',
+        '--with-coverage',
+        '--cover-package=Register',
+        '--cover-html',
+
+    ]
+ 
    MIDDLEWARE = [
        'django.middleware.security.SecurityMiddleware',
        'django.contrib.sessions.middleware.SessionMiddleware',
