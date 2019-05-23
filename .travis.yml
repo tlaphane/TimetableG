@@ -34,7 +34,7 @@ script:
   
  
   
-  - coverage run ./Timetable/tests/test_urls.py
+  - coverage run ./Timetable/Tests/test_urls.py
   - coverage run ./Timetable/manage.py test
   #- coverage run ./Timetable/manage.py TimetableG.Timetable.tests.tests
   #- coverage run ./test.py
