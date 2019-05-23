@@ -30,11 +30,12 @@ before_script:
 script:
   #- python ./manage.py test 
   - python ./Timetable/manage.py test  
-  - pytest
+  #- pytest
   
  
   
-  - coverage run ./Timetable/Register/urls.py
+  - coverage run ./Timetable/tests/test_urls.py
+  - coverage run ./Timetable/manage.py test
   #- coverage run ./Timetable/manage.py TimetableG.Timetable.tests.tests
   #- coverage run ./test.py
   #- coverage run ./loggedin/tests.py
