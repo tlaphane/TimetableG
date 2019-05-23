@@ -9,7 +9,7 @@ env:
   - DJANGO=2.0
 
 before_install:
-  - export DJANGO_SETTINGS_MODULE=./Timetable/Timetable.settings
+  - export DJANGO_SETTINGS_MODULE=./Timetable/Timetable/Timetable.settings
   - export PYTHONPATH='/home/travis/build//Motaung08/TimetableG'
   - export PIP_USE_MIRRORS=true
 
