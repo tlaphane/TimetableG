@@ -30,16 +30,16 @@ before_script:
 script:
   #- python ./manage.py test 
   #- python ./TimetableGen/manage.py 
-  - python ./manage.py
+  - python ./manage.py test
   
  
   
   #- coverage run ./Timetable/Register/tests.py
   #- coverage run ./Timetable/manage.py TimetableG.Timetable.tests.tests
   #- coverage run ./test.py
-  - coverage run ./loggedin/tests.py
+  #- coverage run ./loggedin/tests.py
   #- coverage run  ./loggedin/test_views.py
-  - coverage run ./Register/tests.py
+  #- coverage run ./Register/tests.py
   # coverage run ./TimetableG/loggedin/tests.py 1
   #- coverage run ./Timetable/loggedin/tests.py 
   #- coverage run  ./Timetable/tests/tests.py
