@@ -11,10 +11,11 @@ env:
   #- DJANGO=1.11.20
 
 before_install:
-  #- export DJANGO_SETTINGS_MODULE=Web-data-labelling.settings
+  - export DJANGO_SETTINGS_MODULE=dineos_boys.settings
+
   - export DJANGO_SETTINGS_MODULE=Timetable.settings
-  - export PYTHONPATH=$HOME/builds/Motaung08/TimetableG
   - export PIP_USE_MIRRORS=true
+  - export PYTHONPATH=$HOME/builds/Motaung08/TimetableG
   - BUILD_ON_TRAVIS=true
 
 install:
@@ -46,5 +47,4 @@ script:
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
-  - coveralls
-
+- coveralls
