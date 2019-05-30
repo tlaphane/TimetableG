@@ -40,12 +40,12 @@ before_script:
 script:
   - python manage.py test
   #- coverage run manage.py
-  # - coverage run ./Register/urls.py
+   - coverage run ./Register/urls.py
   #- pytest
-  #- coverage run ./Register/models.py
+  - coverage run ./Register/models.py
   #- coverage run ./Timetable/Tests/test_views.py 1
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  #- bash <(curl -s https://codecov.io/bash)
   - coveralls
   - codecov
