@@ -32,13 +32,3 @@ class Login(models.Model):
 
     def __str__(self):
         return str(self.Password)
-
-
-class Announcements(models.Model):
-    Course_Code = models.ForeignKey(Courses, on_delete=models.CASCADE)
-    Course_Code = models.ForeignKey(Courses, on_delete=models.CASCADE)
-    Stuff_No = models.ForeignKey(RegisteredStaffs, on_delete=models.CASCADE)
-    Slot = models.CharField(max_length=100)
-
-    def __str__(self):
-        return str(self.Slot)
