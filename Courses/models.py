@@ -5,6 +5,10 @@ from django.db import models
 class Courses(models.Model):
     Course_Code = models.CharField(primary_key=True, max_length=100)
     Course_Name = models.CharField(max_length=100)
+    Course_Diagonal = models.CharField(max_length=100, default='Null')
+    Course_Semester = models.CharField(max_length=100, default='Null')
+    Course_TimeSlot = models.CharField(max_length=100, default='Null')
+    Course_Day = models.CharField(max_length=100, default='Null')
     # pdf = models.FileField(upload_to='attachments/pdfs/')
 
     def __str__(self):

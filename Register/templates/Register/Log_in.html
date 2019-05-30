@@ -117,7 +117,7 @@ body {
 <body>
 <div class="wrap">
 
-<form name= "myf" id = "myf" method="post" onsubmit="return go()">
+<form name= "myf" id = "myf" method="post" onsubmit="return loginValidation()">
 
   {% csrf_token %}
 
@@ -165,96 +165,55 @@ body {
 
 
 
-    function Logvalid(){
-        if(window.location.pathname == "/login/logged/"){
-
-                document.getElementById("myf").action = "../";
-
-                return true;
-         }
-         else if(window.location.pathname == "/login/reg"){
-
-                document.getElementById("myf").action = "./logged";
-
-                return true;
-         }
-         else if(window.location.pathname == "/login/"){
 
 
-            var x = String(document.getElementById("uname").value)
-
-            document.getElementById("myf").action = x;
-            alert(x);
-
-            return true;
-         }
-         else{
-
-            document.getElementById("myf").action = "./";
-
-            return true;
-
-         }
-    }
+    function loginValidation(){
 
 
-    function go(){
+            var x = document.getElementById("uname").value;
 
-            var x = document.getElementById("uname").value
-            var y = document.getElementById("psw").value
+            var path = window.location.pathname;
 
-            var RegisteredStudents = [];
-            var psw = [];
-
-            var StaffRegistered = [];
-            var Staffpsw = [];
+            var accessed= false
 
 
-            {% for students in students %}
-                    RegisteredStudents.push( "{{students.Student_No}}" );
-                    psw.push( "{{students.Password}}" );
-            {% endfor %}
+            {% if lecturer %}
+                {%for i in lecturer %}
+                    var f = "{{i.Lect_No}}"
+                    var std=document.getElementById("uname").value;
+                    if(f==std){
+                        var p = "{{i.Password}}"
+                        var pas = document.getElementById("psw").value;
+                        if(p==pas){
+                            if((path.match(new RegExp("/", "g")) || []).length == 3){
+                                document.getElementById("myf").action = "/login/staff"+x+"/";
+                            }
+                            else{
+                                document.getElementById("myf").action = "staff"+x+"/";
+                             }
+                            accessed = true
+                        }
 
-            {% for staff in staff %}
-                    StaffRegistered.push( "{{staff.Lect_No}}" );
-                    Staffpsw.push( "{{staff.Password}}" );
-            {% endfor %}
+                    }
+                {%endfor%}
+
+            {% endif%}
 
 
-
-            if(RegisteredStudents.includes(x)){
-                if(psw.includes(y)){
-                    document.getElementById("myf").action = x+"/";
-
-                    return true;
-                 }
-                 else{
-                    alert("Wrong password");
-                    document.getElementById("myf").action = "";
-                    return true
+            if(accessed == false){
+                if((path.match(new RegExp("/", "g")) || []).length == 3){
+                    document.getElementById("myf").action = "/login/"+x+"/";
+                }
+                else{
+                     document.getElementById("myf").action = x+"/";
                 }
             }
-            else if(StaffRegistered.includes(x)){
-                 if(Staffpsw.includes(y)){
-                    document.getElementById("myf").action = "staff" + x + "/";
 
-                    return true;
-                 }
-                 else{
-                    alert("Wrong password");
-                    document.getElementById("myf").action = "";
-                    return true
-                }
-            }
-            else{
 
-                document.getElementById("myf").action = "";
-                alert("Not in database");
-                return true;
-            }
     }
-
-
+        {% if error_message %}
+                alert("Wrong credentials")
+        {% endif%}
 
 
 

@@ -4,6 +4,7 @@ from django.core.mail import send_mail
 from django.shortcuts import HttpResponse,render, redirect
 from .models import  Courses
 from Log_In.models import StudentsRegister, Lecturer,RegisteredStaffs,RegisteredStd
+from Courses.models import Courses
 
 from django.conf import settings
 from django.core.files.storage import FileSystemStorage
@@ -15,11 +16,40 @@ def courses(request, STDN):
 
 
     user = RegisteredStd.objects.filter(Std_no=STDN)
+    course = Courses.objects.all()
 
-    print("below s")
+    # course = list(Courses.objects.all())
+    # print(course[1])
+    # ad= str(course[1])
+    # #print(user.Course_Code)
+    # #print(user.Course_Code)
+    # #user.Course_Code
+    # for i in user:
+    #     i.Course_Code
+    #     print(i.Course_Code)
+    #
+    #
+    # if(ad[-8:] == "COMS3003"):
+    #     print("yes")
+    # print("hello")
+    #
+    # print("below s")
+    #
+    # for i in user:
+    #     g = str(i.Course_Code)
+    #     for k in range(0,len(course)):
+    #         ad = str(course[k])
+    #         if (ad[-8:] == g):
+    #             print("yessssssssssssssssss")
+    #             print(ad)
+    #
+    #
+    #
+
     context = {
         'user': user,
         'STDN': STDN,
+        'course': course
     }
     print("inside function")
     # simple_upload(request)

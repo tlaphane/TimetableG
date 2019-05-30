@@ -8,6 +8,7 @@ urlpatterns = [
     url(r'^', views.make),
 
 
+
 ]
 
 if settings.DEBUG:
