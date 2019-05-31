@@ -16,8 +16,6 @@ def courses(request, STDN):
 
 
     user = RegisteredStd.objects.filter(Std_no=STDN)
-    course = Courses.objects.all()
-
     # course = list(Courses.objects.all())
     # print(course[1])
     # ad= str(course[1])
@@ -49,7 +47,7 @@ def courses(request, STDN):
     context = {
         'user': user,
         'STDN': STDN,
-        'course': course
+        #"course": course
     }
     print("inside function")
     # simple_upload(request)

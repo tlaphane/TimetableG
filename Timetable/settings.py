@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-STATICFILES_DIRS=[os.path.join(BASE_DIR,'Register'),]
+# STATICFILES_DIRS=[os.path.join(BASE_DIR,"static"),'Timetable Generator/timetable-generator/Timetable/Register/templates/Register/static/css/']
 # Application definition
 
 INSTALLED_APPS = [
@@ -35,17 +35,17 @@ INSTALLED_APPS = [
    #  'Announcements.apps.AnnouncementsConfig',
    #  'Courses.apps.CoursesConfig',
     #'Lecturer.apps.LecturerConfig',
-    'View_Timetable.apps.ViewTimetableConfig',
-    'Register.apps.RegisterConfig',
-    'Log_In.apps.Log_InConfig',
-    'Courses.apps.CoursesConfig',
-    'Announcements.apps.AnnouncementsConfig',
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
+	'View_Timetable.apps.ViewTimetableConfig',
+	'Register.apps.RegisterConfig',
+	'Log_In.apps.Log_InConfig',
+	'Courses.apps.CoursesConfig',
+	'Announcements.apps.AnnouncementsConfig',
+    	'django.contrib.admin',
+    	'django.contrib.auth',
+    	'django.contrib.contenttypes',
+    	'django.contrib.sessions',
+    	'django.contrib.messages',
+    	'django.contrib.staticfiles',
 ]
 
 MIDDLEWARE = [
@@ -63,7 +63,7 @@ ROOT_URLCONF = 'Timetable.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, '/Register/templates')],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -120,7 +120,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Africa/Johannesburg'
+TIME_ZONE = 'Greenwich'
 
 USE_I18N = True
 

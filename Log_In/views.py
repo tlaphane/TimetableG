@@ -59,11 +59,12 @@ def dummy(request, STDN):
             student.save()
 
             arr = conn.entries[0].memberOf
-
+            print(arr)
             for i in range(0, len(arr)):
                 # print(arr[i])
                 x = arr[i].split(',')
                 course = x[0]
+
                 if (len(course) == 11):
                     course_code = course[-8:]
                     print(course_code)

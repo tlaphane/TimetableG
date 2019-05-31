@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from Courses.models import Courses
-from Log_In.models import RegisteredStd
+from Timetable.Courses.models import Courses
+from Timetable.Log_In.models import RegisteredStd
 
 
 # Create your views here.
@@ -16,4 +16,3 @@ def timetable(request, STDN):
 
     }
 
-    return render(request, 'Register/Timetable.html', context)

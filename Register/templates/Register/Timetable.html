@@ -89,15 +89,14 @@
       </table>
 
       <script>
-
+	alert("test")
       {%if StudentRegisteredCourses%}
       		{%for i in StudentRegisteredCourses%}
-
+      			alert("{{i.Course_Code}}")
       			{%for j in courses%}
 
 
 					if("{{i.Course_Code}}" == "{{j.Course_Code}}"){
-
 						var day = "{{j.Course_Day}}"
 						if(day=="THURSDAY"){
 							var Time = "{{j.Course_TimeSlot}}"
@@ -271,7 +270,6 @@
 						}
 						if(day=="MONDAY"){
 							var Time = "{{j.Course_TimeSlot}}"
-
 
                             if(Time =="08:00-08:45"){
 
